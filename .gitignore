@@ -1,0 +1,6 @@
+# Animated Portable Network Graphics
+*.png
+*.jpg
+
+# Random files
+*.DS_Store
