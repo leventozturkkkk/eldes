@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
+<title>Eldes Elektronik</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,12 +16,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     font-family: "Montserrat", sans-serif
 }
 .fa-anchor,.fa-coffee {font-size:200px}
-.w3-button-link3:hover{
+
+.w3-bar-item {
+    margin-bottom: -10px;
+    text-decoration: none;
+}
+
+.w3-button-link:hover{
     font-family: "Montserrat", sans-serif;
-    transition-duration: 0.2s;
-    background-color: white; 
-    color: black; 
-    text-decoration:underline red;
+    transition-duration: 0.3s;
+    /* background-color: rgba(255, 0, 0, 0.5); */
+    color: rgba(255, 0, 0);
+    /* text-decoration: underline; */
 }
 </style>
 </head>
@@ -31,20 +37,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a class="w3-bar-item w3-button w3-padding-large w3-white" href="http://eldes.com.tr/">
+    <a class="w3-bar-item w3-button w3-white" href="http://eldes.com.tr/" style="margin-bottom: -100px;">
         <img loading="lazy" width="250" height="60" src="eldes_logo.jpg" alt="Eldes Mühendislik"></a>
-    <a href="https://google.com/" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-32 w3-hover-white w3-right">Link 4</a>
-    <a href="#" class="w3-bar-item w3-button w3-button-link3 w3-padding-32 w3-right">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-32 w3-hover-white w3-right">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-32 w3-hover-white w3-right">Link 1</a>
+    <a href="https://google.com/" target="_blank" class="w3-bar-item w3-button-link w3-padding-32 w3-right">İletişim</a>
+    <a href="#" class="w3-bar-item w3-button-link w3-padding-32 w3-right">Hakkımızda</a>
+    <a href="#" class="w3-bar-item w3-button-link w3-padding-32 w3-right">Ürünler</a>
+    <a href="#" class="w3-bar-item w3-button-link w3-padding-32 w3-right">Anasayfa</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Link 4</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Anasayfa</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Ürünler</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">Hakkımızda</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-medium w3-right">İletişim</a>
   </div>
 </div>
 
