@@ -1,0 +1,122 @@
+<!--default template: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_start_page&stacked=h -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Eldes Elektronik</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="eldes_tabicon.jpg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Scroll To Top Button Style */
+        #myBtn {
+        /* İmage src for arrow up icon
+        <i class="fa-solid fa-arrow-up"></i> */
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: 555; /* Set a background color */
+        color: red; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        transition: ease 0.5;
+        }
+
+        #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+
+        .w3-bar-item {
+            margin-bottom: -10px;
+            text-decoration: none;
+        }
+
+        .w3-button-link:hover {
+            font-family: "Montserrat", sans-serif;
+            transition-duration: 0.3s;
+            /* background-color: rgba(255, 0, 0, 0.5); */
+            color: rgba(255, 0, 0);
+            /* text-decoration: underline; */
+        }
+    </style>
+
+
+    <body>
+
+         <!-- Scroll To Top Button -->
+    <button class="fa-solid fa-arrow-up" onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a class="w3-bar-item w3-button w3-white" href="http://eldes.com.tr/">
+                <img loading="lazy" width="250" height="60" src="eldes_logo.jpg" alt="Eldes Mühendislik"></a>
+            <a href="https://google.com/" target="_blank"
+                class="w3-bar-item w3-button-link w3-padding-32 w3-right">İletişim</a>
+            <a href="#" class="w3-bar-item w3-button-link w3-padding-32 w3-right">Hakkımızda</a>
+            <a href="eldes_urunler_v1.html" class="w3-bar-item w3-button-link w3-padding-32 w3-right">Ürünler</a>
+            <a href="eldes_homepage_v1.html" class="w3-bar-item w3-button-link w3-padding-32 w3-right">Anasayfa</a>
+        </div>
+
+
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</head>
